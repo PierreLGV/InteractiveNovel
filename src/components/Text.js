@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Text.css' 
+import './Text.css'
 import 'materialize-css/dist/js/materialize.js'
 import 'materialize-css/dist/css/materialize.css'
 
@@ -10,15 +10,18 @@ const globalStyle = {
 }
 
 class Text extends Component {
+
   constructor(props) {
     super(props)
     props.loadPage(import(`../content/${props.pageName}`))
   }
+
   componentDidUpdate(prevProps) {
     if (prevProps.pageName !== this.props.pageName) {
       this.props.loadPage(import(`../content/${this.props.pageName}`))
     }
   }
+
   render() {
     const style = {
       backgroundImage: `linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.1)), url(${this.props.backgroundImageUrl})`,
@@ -33,6 +36,7 @@ class Text extends Component {
       </div>
     )
   }
+
 }
-    
+
 export default Text
