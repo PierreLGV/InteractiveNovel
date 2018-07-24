@@ -1,0 +1,11 @@
+.answers {
+  background-image: url('../images/manuscript.jpg');  
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+  text-align: justify;
+}
+.answers p {
+  font-size: 1.4em;
+  color: black;
+}

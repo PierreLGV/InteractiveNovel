@@ -1,0 +1,6 @@
+.character_sheet {
+  background-image: url('./images/manuscript.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}

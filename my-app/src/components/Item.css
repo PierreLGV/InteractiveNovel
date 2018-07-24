@@ -1,0 +1,13 @@
+.item_grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 10px 0 40px;
+}
+
+.item {
+  height: 70px;
+  width: 70px;
+  border: 1px solid grey;
+  justify-content: flex-start;
+}

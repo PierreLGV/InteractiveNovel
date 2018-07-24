@@ -1,0 +1,12 @@
+.text {
+  height: 100vh;
+  padding: 10vh;
+  border-left: rgb(85, 77, 34) 3px solid;
+  border-right: rgb(85, 77, 34) 3px solid;  
+  text-align: center;
+  text-align: justify;
+}
+.text p  {
+  color: black;
+  font-size: 1.4em;
+}
