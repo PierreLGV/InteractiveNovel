@@ -5,7 +5,17 @@
   height: 100vh;
   text-align: justify;
 }
-.answers p {
-  font-size: 1.4em;
+
+.choice_box {
+  /* background-color: darkturquoise; */
+}
+
+.choice_box p {
+  font-size: 1.4rem;
   color: black;
+}
+
+.choice_box .requires {
+  font-size: 1.2rem;
+  color: #9c27b0;
 }
