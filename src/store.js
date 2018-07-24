@@ -24,27 +24,31 @@ const initialState = {
   life: 100,
   mana: 20,
   gameOver: false,
-  inventory: [
-    items[0],
-    items[5],
-  ]
+  inventory: []
 }
 
 const reducer = (state, action) => {
+ 
   if (action.type === 'LOAD_PAGE') {
-
     const consequences = action.page.consequences
-
     const newState = {
       ...state,
       content: action.page.content,
       backgroundImageUrl: action.page.image,
       choices: action.page.choices
     }
-    if(consequences) {
+
+    if (consequences) {
       newState.life += consequences.life || 0
       newState.inventory = [ ...state.inventory, ...(consequences.pickUp || []).map( i => items[i]) ] // todo: handle duplicates
+      
+      if (consequences.pickUpRandom) {
+        const randomIndex = Math.floor(Math.random() * consequences.pickUpRandom.length)
+        const index = consequences.pickUpRandom[randomIndex]
+        const item = items[index]
 
+        newState.inventory = [ ...newState.inventory, item ] 
+      } 
     }
 
     return newState
@@ -56,7 +60,7 @@ const reducer = (state, action) => {
     }
   }
   if (action.type === 'REMOVE_LIFE') {
-    if(state.life === 0) {
+    if (state.life === 0) {
       return {
         ...state,
         gameOver: true

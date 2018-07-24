@@ -3,6 +3,10 @@ import image from '../images/forestlichen.jpg'
 
 export { image }
 
+export const consequences = {
+  pickUpRandom: [0, 5]
+}
+
 export const content =  
   <p>
     Go hunting.
