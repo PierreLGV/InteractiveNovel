@@ -5,6 +5,7 @@ import './App.css'
 import Profile from './components/Profile.js'
 import Item from './components/Item.js'
 import Text from './components/Text.js'
+import LifeSphere from './components/LifeSphere.js'
 import Answer from './components/Answer.js'
 
 const Page404 = () => <div>404</div>

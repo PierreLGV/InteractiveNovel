@@ -11,20 +11,20 @@ import avatar from './images/avatar.png'
 const items = [
   { name: 'leatherboots', img: leatherboots },
   { name: 'harlequincrest', img: harlequincrest },
-  { name: 'lazarusspire', img: lazarusspire },    
-  { name: 'sash', img: sash },    
-  { name: 'rondache', img: rondache },    
-  { name: 'quilted', img: quilted },            
+  { name: 'lazarusspire', img: lazarusspire },
+  { name: 'sash', img: sash },
+  { name: 'rondache', img: rondache },
+  { name: 'quilted', img: quilted },
 ]
 
 const initialState = {
   background: 'linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.1))',
   content: 'loading',
   choices: [],
-  life: 100,
+  life: 70,
   inventory: [
     items[0],
-    items[5],   
+    items[5],
   ]
 }
 
