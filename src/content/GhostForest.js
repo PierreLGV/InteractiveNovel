@@ -16,6 +16,6 @@ export const content =
 
 export const choices = [
   { page: 'Upstairs', message: "1 - Climb up the stairs" },
-  { page: 'ForestLeftRoad', message: "1 - Go backward, doesn't feel safe this way" },
+  { page: 'ForestLeftRoad', message: "2 - Go backward, doesn't feel safe this way" },
   
 ]

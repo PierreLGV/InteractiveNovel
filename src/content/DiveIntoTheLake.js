@@ -3,6 +3,11 @@ import image from '../images/lake.jpg'
 
 export { image }
 
+export const consequences = {
+  pickUp: [1]
+}
+
+
 export const content =  
   <p>
     Far away, swall canoes are going out of sight.

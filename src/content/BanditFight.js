@@ -3,6 +3,10 @@ import image from '../images/banditAmbush.jpg'
 
 export { image }
 
+export const consequences = {
+  life: -10,
+}
+
 export const content =  
   <p>
     A Bandit strike you with an arrow in the knee.

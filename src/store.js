@@ -22,6 +22,8 @@ const initialState = {
   content: 'loading',
   choices: [],
   life: 100,
+  mana: 20,
+  gameOver: false, 
   inventory: [
     items[0],
     items[5],   
@@ -30,12 +32,22 @@ const initialState = {
 
 const reducer = (state, action) => {
   if (action.type === 'LOAD_PAGE') {
-    return {
+    
+    const consequences = action.page.consequences
+
+    const newState = {
       ...state,
       content: action.page.content,
       backgroundImageUrl: action.page.image,
       choices: action.page.choices
     }
+    if(consequences) {
+      newState.life += consequences.life || 0
+      newState.inventory = [ ...state.inventory, ...(consequences.pickUp || []).map( i => items[i]) ] // todo: handle duplicates
+      
+    }
+    
+    return newState
   }
   if (action.type === 'LOAD_INVENTORY') {
     return {
@@ -44,9 +56,34 @@ const reducer = (state, action) => {
     }
   }
   if (action.type === 'REMOVE_LIFE') {
+    if(state.life === 0) {
+      return {
+        ...state,
+        gameOver: true 
+      }
+    }
+    
     return {
-      ...state,
-      life: action.life
+        ...state,
+        life: state.life - action.life
+    }
+  }
+  if (action.type === 'ADD_LIFE') {
+    if (state.life === 100) {
+      return {
+        ...state,
+        life: 100
+      }
+    } else if (state.life + action.life > 100 ) {
+      return {
+        ...state,
+        life: 100
+      }
+    }
+    
+    return {
+        ...state,
+        life: state.life + action.life
     }
   }
   return state
@@ -64,6 +101,11 @@ const removeLife = () => {
   const random = Math.random(Math.floor(0, 10))
   const removeLife = this.state.life - random
   store.dispatch({ type: 'REMOVE_LIFE', removeLife})
+}
+const addLife = () => {
+  const random = Math.random(Math.floor(0, 10))
+  const addLife = this.state.life + random
+  store.dispatch({ type: 'ADD_LIFE', addLife})
 }
 const addItem = () => {
   store.dispatch({ type: 'ADD_ITEM',})
