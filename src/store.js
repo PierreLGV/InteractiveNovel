@@ -11,10 +11,10 @@ import avatar from './images/avatar.png'
 const items = [
   { name: 'leatherboots', img: leatherboots },
   { name: 'harlequincrest', img: harlequincrest },
-  { name: 'lazarusspire', img: lazarusspire },    
-  { name: 'sash', img: sash },    
-  { name: 'rondache', img: rondache },    
-  { name: 'quilted', img: quilted },            
+  { name: 'lazarusspire', img: lazarusspire },
+  { name: 'sash', img: sash },
+  { name: 'rondache', img: rondache },
+  { name: 'quilted', img: quilted },
 ]
 
 const initialState = {
@@ -23,16 +23,16 @@ const initialState = {
   choices: [],
   life: 100,
   mana: 20,
-  gameOver: false, 
+  gameOver: false,
   inventory: [
     items[0],
-    items[5],   
+    items[5],
   ]
 }
 
 const reducer = (state, action) => {
   if (action.type === 'LOAD_PAGE') {
-    
+
     const consequences = action.page.consequences
 
     const newState = {
@@ -44,9 +44,9 @@ const reducer = (state, action) => {
     if(consequences) {
       newState.life += consequences.life || 0
       newState.inventory = [ ...state.inventory, ...(consequences.pickUp || []).map( i => items[i]) ] // todo: handle duplicates
-      
+
     }
-    
+
     return newState
   }
   if (action.type === 'LOAD_INVENTORY') {
@@ -59,10 +59,10 @@ const reducer = (state, action) => {
     if(state.life === 0) {
       return {
         ...state,
-        gameOver: true 
+        gameOver: true
       }
     }
-    
+
     return {
         ...state,
         life: state.life - action.life
@@ -80,7 +80,7 @@ const reducer = (state, action) => {
         life: 100
       }
     }
-    
+
     return {
         ...state,
         life: state.life + action.life
