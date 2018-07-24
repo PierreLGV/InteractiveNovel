@@ -15,7 +15,7 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'ForestStairs', message: '1. Look around for details' },
-  { page: 'DiveIntoTheLake', message: '2. Leave the road and cut by the bushes'},
-  { page: 'GhostForest', message: '3. Be careful and move silently'},
+  { page: 'ForestStairs', message: "Look around for details" },
+  { page: 'DiveIntoTheLake', message: "Leave the road and cut by the bushes"},
+  { page: 'GhostForest', message: "Be careful and move silently"},
 ]

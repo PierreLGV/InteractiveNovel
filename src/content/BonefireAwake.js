@@ -15,5 +15,5 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'Intro', message: "1. Get back on your way" },
+  { page: 'Intro', message: "Get back on your way" },
 ]

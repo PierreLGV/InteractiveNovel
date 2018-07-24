@@ -19,8 +19,8 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'ForestLeftRoad', message: '1. Take the road on your left' },
-  { page: 'DiveIntoTheLake', message: '2. Inspect the river nearby'},
-  { page: 'Bonefire', message: '3. Light a bonefire and rest for the night'},
-  { page: 'GatherFood', message: '4. Gather some food, the woods are full of animals'},
+  { page: 'ForestLeftRoad', message: "Take the road on your left" },
+  { page: 'DiveIntoTheLake', message: "Inspect the river nearby"},
+  { page: 'Bonefire', message: "Light a bonefire and rest for the night"},
+  { page: 'GatherFood', message: "Gather some food, the woods are full of animals"},
 ]

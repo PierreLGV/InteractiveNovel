@@ -15,8 +15,8 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'LakeStatue', message: '1. Swim in the water for a while' },
-  { page: 'MuddyWater', message: '2. Look for fishes'},
-  { page: 'Bonefire', message: '3. Inspect the bottom of the lake'},
-  { page: 'GatherFood', message: '4. Relax and enjoy the refreshing water'},
+  { page: 'LakeStatue', message: "Swim in the water for a while" },
+  { page: 'MuddyWater', message: "Look for fishes"},
+  { page: 'Bonefire', message: "Inspect the bottom of the lake"},
+  { page: 'GatherFood', message: "Relax and enjoy the refreshing water"},
 ]

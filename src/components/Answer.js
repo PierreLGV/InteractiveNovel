@@ -10,8 +10,8 @@ const Answer = (props) =>
   <div className="row answers">
     <div className="col l12 m12">
       <div className="col l12 m12">
-        { props.choices.map(choice =>
-          <Link to={`/story/${choice.page}`}><p className='poping'>{choice.message}</p></Link>
+        { props.choices.map((choice, i) =>
+          <Link to={`/story/${choice.page}`}><p className='poping'>{i + 1}. {choice.message}</p></Link>
         )}
       </div>
       <ManaSphere mana={props.mana} />

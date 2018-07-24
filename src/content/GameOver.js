@@ -9,5 +9,5 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'Intro', message: '1. New Game' },
+  { page: 'Intro', message: "New Game" },
 ]

@@ -19,6 +19,6 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'HuntingTrap', message: "1 - It's worth waiting, you spoted numerous rabbit holes all around you" },
+  { page: 'HuntingTrap', message: "It's worth waiting, you spoted numerous rabbit holes all around you" },
   
 ]
