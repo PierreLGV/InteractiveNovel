@@ -3,6 +3,10 @@ import image from '../images/bonefireAsleep.jpg'
 
 export { image }
 
+export const consequences = {
+  life: -20,
+}
+
 export const content =  
   <p>
     Bandits where waiting for you to lower your guard.
@@ -19,6 +23,4 @@ export const choices = [
   { page: 'BonefireAwake', message: '2. Offer money'},
   { page: 'BonefireAwake', message: '3. Fight the thieves'},
   { page: 'BonefireAwake', message: '4. Escape in the woods'},
-  
-  
 ]
