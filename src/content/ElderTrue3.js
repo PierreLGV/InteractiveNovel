@@ -10,9 +10,11 @@ export const consequences = {
 }
 export const content =  
   <p>
-        Un vieillard vous accueil et tiens des propos étranges.
+      - Tu es vraiment trop mauvais en programmation jeune magicien... Aaarghhhhh...
 
-
+      Fatiguée par vos réponses minable, le vieux sage meurt d'exaspération.
+      Vous en profitez pour lui dérober son baton magique.
+      Cette gymnastique mentale vous a revigorer !
   </p>
 
 export const choices = [

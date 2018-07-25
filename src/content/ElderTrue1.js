@@ -4,12 +4,12 @@ export { image }
 
 export const content =  
   <p>
-        Un vieillard vous accueil et tiens des propos étranges.
-
-
+        Comment appelle-t-on une fonction anonyme ?
   </p>
 
 export const choices = [
-  { page: 'ElderTrue2', message: "reponse 1" },
-  { page: 'ElderFalse', message: "reponse 2"},
+  { page: 'ElderFalse', message: "(Fn)"},
+  { page: 'ElderFalse', message: "..."},
+  { page: 'ElderTrue2', message: "Michel ?" },  
+  { page: 'ElderFalse', message: "()"},
 ]
