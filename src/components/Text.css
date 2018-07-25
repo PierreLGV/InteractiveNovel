@@ -1,7 +1,7 @@
 .text {
   height: 100vh;
   border-left: rgb(85, 77, 34) 3px solid;
-  border-right: rgb(85, 77, 34) 3px solid;  
+  border-right: rgb(85, 77, 34) 3px solid;
   text-align: center;
   text-align: justify;
 
@@ -49,5 +49,5 @@
 }
 
 .text p:hover  {
-  background-color: #fff9;
+  background-color: rgba(255, 255, 255, 0.5);
 }

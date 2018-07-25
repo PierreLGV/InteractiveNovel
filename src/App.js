@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { store, actions } from './store.js'
-import { Router } from '@reach/router'
+import { Router, Link } from '@reach/router'
 import Profile from './components/Profile.js'
 import Item from './components/Item.js'
 import Text from './components/Text.js'
@@ -8,8 +8,28 @@ import LifeSphere from './components/LifeSphere.js'
 import Answer from './components/Answer.js'
 import './App.css'
 
-const Page404 = () => <div>404</div>
-const GameOver = () => <div>Game Over</div>
+const Page404 = () => <div>404 gros..</div>
+
+const Menu = () =>
+  <div>
+    <Link to="/story/Start">Start</Link>
+  </div>
+
+const Game = ({ state }) =>
+  <div className="row">
+    <div className=" character_sheet col s12 m4 l3">
+      <Profile life={state.life}/>
+      <Item {...actions} {...state}/>
+    </div>
+    <div className="col s12 m8 l6">
+      <Router>
+        <Text path=":pageName" {...actions} {...state} />
+      </Router>
+    </div>
+    <div className="col s12 m4 l3">
+      <Answer {...actions} {...state} />
+    </div>
+  </div>
 
 class App extends Component {
   constructor() {
@@ -23,25 +43,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        { this.state.gameOver
-        ? <GameOver />
-        :
-        <div className="row">
-          <div className=" character_sheet col s12 m4 l3">
-            <Profile life={this.state.life}/>
-            <Item {...actions} {...this.state}/>
-          </div>
-          <div className="col s12 m8 l6">
-            <Router>
-              <Text path="/story/:pageName" {...actions} {...this.state} />
-              <Page404 path="/*" />
-            </Router>
-          </div>
-          <div className="col s12 m4 l3">
-            <Answer {...actions} {...this.state} />
-          </div>
-        </div>
-      }
+        <Router>
+          <Menu path="/" />
+          <Game path="/story/*" state={this.state} />
+          <Page404 path="*" />
+        </Router>
       </div>
     )
   }

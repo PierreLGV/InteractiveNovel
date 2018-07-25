@@ -1,5 +1,5 @@
 .App {
-  cursor: url("./images/sword.png"), pointer;
+  cursor: url("./images/sword.png"), pointer !important;
 }
 
 .App .row {
