@@ -1,15 +1,16 @@
 import React from 'react'
-import image from '../images/banditAmbush.jpg'
+import image from '../images/followSolarKnight.jpg'
 
 export { image }
 
 export const consequences = {
-  life: -10,
+  pickUp: [6]
 }
+
 
 export const content =  
   <p>
-    A Bandit strike you with an arrow in the knee.
+    L'homme depose son casque et monte au sommet des marches.
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Aenean sed justo sapien. Aenean et metus auctor, euismod quam nec, lobortis metus. 
     Vivamus fermentum libero quis augue ultricies feugiat. Pellentesque sed euismod tellus. 
@@ -19,6 +20,8 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'BanditFight2', message: "Fight", requires: { mana: 50 } },
-  { page: 'DiveIntoTheLake', message: "Flight"},
+  { page: 'LakeStatue', message: "Voler le casque" },
+  { page: '', message: "Aller se presenter"},
+  { page: '', message: "Jetter une pierre dans sa direction"},
+  { page: '', message: "Relax and enjoy the refreshing water"},
 ]

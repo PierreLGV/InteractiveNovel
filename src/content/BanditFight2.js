@@ -4,7 +4,7 @@ import image from '../images/banditAmbush.jpg'
 export { image }
 
 export const consequences = {
-  life: -10,
+  pickUp: [7],
 }
 
 export const content =  
@@ -19,6 +19,6 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'BanditFight2', message: "Fight", requires: { mana: 50 } },
+  { page: 'BanditFight', message: "Fight", requires: { mana: 50 } },
   { page: 'DiveIntoTheLake', message: "Flight"},
 ]

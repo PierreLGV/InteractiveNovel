@@ -15,7 +15,9 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'Upstairs', message: "Climb up the stairs" },
-  { page: 'ForestLeftRoad', message: "Go backward, doesn't feel safe this way" },
+  { page: 'SolarKnight', message: "Go back" },
+  { page: 'FollowSolarKnight', message: "Follow" },
+  { page: 'SolarKnight', message: "Throw rocks" },
+  
   
 ]

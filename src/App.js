@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { store, actions } from './store.js'
 import { Router } from '@reach/router'
-import './App.css'
 import Profile from './components/Profile.js'
 import Item from './components/Item.js'
 import Text from './components/Text.js'
 import LifeSphere from './components/LifeSphere.js'
 import Answer from './components/Answer.js'
-// import GameOver from './content/GameOver.js'
+import './App.css'
 
 const Page404 = () => <div>404</div>
 const GameOver = () => <div>Game Over</div>

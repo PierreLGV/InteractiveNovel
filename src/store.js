@@ -7,6 +7,9 @@ import rondache from './images/rondache.gif'
 import quilted from './images/quilted.gif'
 import gnarledstaff from './images/gnarledstaff.gif'
 import avatar from './images/avatar.png'
+import sunhelm from './images/sunhelm.png'
+import chapka from './images/chapka.png'
+
 
 const items = [
   { name: 'leatherboots', img: leatherboots },
@@ -15,6 +18,8 @@ const items = [
   { name: 'sash', img: sash },
   { name: 'rondache', img: rondache },
   { name: 'quilted', img: quilted },
+  { name: 'sunhelm', img: sunhelm },
+  { name: 'chapka', img: chapka },
 ]
 
 const initialState = {
@@ -22,7 +27,7 @@ const initialState = {
   content: 'loading',
   choices: [],
   life: 100,
-  mana: 20,
+  mana: 80,
   gameOver: false,
   inventory: []
 }
