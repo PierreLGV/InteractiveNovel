@@ -4,6 +4,10 @@ import { RONDACHE } from '../items';
 
 export { image }
 
+export const consequences = {
+  mana: -20
+}
+
 export const content =  
   <p>
    Vous canalisez votre energie et gelez vos ennui sur place. Tous deux succombe a la morsure du froid. Vous pouvez poursuivre paisiblement votre soirée.

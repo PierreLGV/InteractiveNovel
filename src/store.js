@@ -10,7 +10,7 @@ const initialState = {
   life: 100, //0,
   mana: 20, //0,
   gameOver: false,
-  inventory: []
+  inventory: [RABBIT, CHAPKA, LAZARUS_SPIRE]
 }
 
 const reducer = (state, action) => {
@@ -32,7 +32,7 @@ const reducer = (state, action) => {
       newState.life += consequences.life || 0
       newState.mana += consequences.mana || 0
       
-      newState.inventory = [ ...state.inventory, ...(consequences.pickUpItems || []) ] // todo: handle duplicates
+      newState.inventory = [ ...newState.inventory, ...(consequences.pickUpItems || []) ] // todo: handle duplicates
 
       if (consequences.pickUpRandomItems) {
         const randomIndex = Math.floor(Math.random() * consequences.pickUpRandomItems.length)

@@ -5,7 +5,7 @@ import { LAZARUS_SPIRE } from '../items';
 export { image }
 
 export const consequences = {
-  life: -25
+  mana: -50
 }
 
 export const content =  

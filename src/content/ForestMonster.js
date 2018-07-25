@@ -15,6 +15,6 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'LazarusSpell', message: "Combttre", requires: { mana: 50, items: [ LAZARUS_SPIRE ]} },
+  { page: 'LazarusSpell', message: "Combattre la bête", requires: { mana: 50, items: [ LAZARUS_SPIRE ]} },
   { page: 'BonefireRunAway', message: "Fuir hors de porter de la bête"},
 ]
