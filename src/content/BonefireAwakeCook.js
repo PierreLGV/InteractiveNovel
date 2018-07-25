@@ -11,7 +11,7 @@ export const consequences = {
 
 export const content =  
   <p>
-    Vous êtes repu et reposé> Une belle journée commence pour vous.
+    Vous êtes repu et reposé. Une belle journée commence pour vous.
   </p>
 
 export const choices = [

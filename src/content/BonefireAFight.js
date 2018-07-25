@@ -10,5 +10,5 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'Bonefire', message: "Retournez pres de votre feu de camps" },
+  { page: 'Bonefire', message: "Retourner pres de votre feu de camps" },
 ]

@@ -11,7 +11,7 @@ export const consequences = {
 
 export const content =  
   <p>
-    esc au dernier moent mais franfran est mort.
+    Un déferlement de lumiere purificatrice liquefie le diplomate sur place. Vous esquivez de justesse mais avez le poil roussi.
 
   </p>
 

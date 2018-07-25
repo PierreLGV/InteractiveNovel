@@ -10,7 +10,7 @@ export { image }
 
 export const content =  
   <p>
-    decouvrez son vrai visage et se faire depouiller
+    Vous voler le casque de l homme en armure. Il vous repere et accourt d'un pas menacant. Vous decouvrez son vrai visage ...
   </p>
 
 export const choices = [

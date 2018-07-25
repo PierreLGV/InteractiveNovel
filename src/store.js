@@ -1,5 +1,5 @@
 import { createStore } from 'redux'
-import { CHAPKA, LAZARUS_SPIRE } from './items';
+import { CHAPKA, LAZARUS_SPIRE, RONDACHE } from './items';
 import { RABBIT } from './items';
 
 

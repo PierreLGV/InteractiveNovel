@@ -6,7 +6,7 @@ export { image }
 
 export const content =  
   <p>
-    TRADE
+    Vous proposez un echange au chevalier que vous venez de rencontrer.
 
   </p>
 

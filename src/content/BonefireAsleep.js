@@ -16,7 +16,7 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'BonefireNegociate', message: "Negociez.", requires: { items: [ RONDACHE ] }},
+  { page: 'BonefireNegociate', message: "Negocier.", requires: { items: [ RONDACHE ] }},
   { page: 'BonefireAFight', message: "Combattre les assaillants", requires : { mana: 20 }},
-  { page: 'BonefireRunAway', message: "Tentez de fuir vers les bois" },
+  { page: 'BonefireRunAway', message: "Tenter de fuir vers les bois" },
 ]
