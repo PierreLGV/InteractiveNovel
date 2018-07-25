@@ -1,0 +1,2 @@
+webpackJsonp([3],{160:function(e,n,t){e.exports=t.p+"static/media/ruins.c34beb1d.jpg"},61:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),t.d(n,"content",function(){return s}),t.d(n,"choices",function(){return c});var r=t(0),a=t.n(r),u=t(160),o=t.n(u);t.d(n,"image",function(){return o.a});var s=a.a.createElement("p",null,"Un temple en ruine"),c=[{page:"Elder",message:"Monter en haut de l\xe9difice"},{page:"ForestLeftRoad",message:"Retourner sur vos pas"}]}});
+//# sourceMappingURL=3.cdbc6eaf.chunk.js.map

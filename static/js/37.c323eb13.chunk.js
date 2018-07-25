@@ -1,0 +1,2 @@
+webpackJsonp([37],{147:function(e,n,t){e.exports=t.p+"static/media/burnedTrees2.fcabc159.jpg"},27:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),t.d(n,"consequences",function(){return u}),t.d(n,"content",function(){return o}),t.d(n,"choices",function(){return s});var c=t(0),r=t.n(c),a=t(147),i=t.n(a);t(1);t.d(n,"image",function(){return i.a});var u={life:-25},o=r.a.createElement("p",null,"Felicitation, vous venez de terminer l'acte I."),s=[{page:"Start",message:"New Game"}]}});
+//# sourceMappingURL=37.c323eb13.chunk.js.map

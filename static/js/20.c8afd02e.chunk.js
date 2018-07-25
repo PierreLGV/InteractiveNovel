@@ -1,0 +1,2 @@
+webpackJsonp([20],{153:function(e,t,n){e.exports=n.p+"static/media/gameover.cb9b749b.jpg"},44:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),n.d(t,"content",function(){return u}),n.d(t,"choices",function(){return i});var a=n(0),c=n.n(a),o=n(153),r=n.n(o);n.d(t,"image",function(){return r.a});var u=c.a.createElement("p",null,"Vous \xeates tomb\xe9 au combat."),i=[{page:"Start",message:"New Game"}]}});
+//# sourceMappingURL=20.c8afd02e.chunk.js.map

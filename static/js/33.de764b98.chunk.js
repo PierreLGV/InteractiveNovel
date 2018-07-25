@@ -1,0 +1,2 @@
+webpackJsonp([33],{130:function(e,n,t){e.exports=t.p+"static/media/elder.add8c838.jpg"},31:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),t.d(n,"content",function(){return u}),t.d(n,"choices",function(){return a});var r=t(0),i=t.n(r),s=t(130),o=t.n(s);t.d(n,"image",function(){return o.a});var u=i.a.createElement("p",null,"Merci de m 'avoir rendu visite et tenu companie. Je suis si isol\xe9 dans ces vieilles ruines. Au revoir."),a=[{page:"ForestLeftRoad",message:"Retourner sur vos pas"}]}});
+//# sourceMappingURL=33.de764b98.chunk.js.map

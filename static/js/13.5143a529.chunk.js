@@ -1,0 +1,2 @@
+webpackJsonp([13],{157:function(e,n,t){e.exports=t.p+"static/media/lazarusspell.1d976c0d.jpg"},51:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),t.d(n,"consequences",function(){return s}),t.d(n,"content",function(){return i}),t.d(n,"choices",function(){return o});var r=t(0),u=t.n(r),a=t(157),c=t.n(a);t(1);t.d(n,"image",function(){return c.a});var s={mana:-50},i=u.a.createElement("p",null,"lazarus spell"),o=[{page:"BurningTrees2",message:"...suite"}]}});
+//# sourceMappingURL=13.5143a529.chunk.js.map
