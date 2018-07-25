@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../images/backgrounds/bonefireAsleep.jpg'
+import { RONDACHE } from '../items';
 
 export { image }
 
@@ -19,8 +20,7 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'BonefireAsleep', message: "Negociate." },
-  { page: 'BonefireAwake', message: "Offer money"},
-  { page: 'BonefireAwake', message: "Fight the thieves"},
-  { page: 'BonefireAwake', message: "Escape in the woods"},
+  { page: 'BonefireNegociate', message: "Negociez.", requires: { items: [ RONDACHE ] }},
+  { page: 'BonefireAFight', message: "Combattre les assaillants", requires : { mana: 20 }},
+  { page: 'BonefireRunAway', message: "Tentez de fuir vers les bois" },
 ]

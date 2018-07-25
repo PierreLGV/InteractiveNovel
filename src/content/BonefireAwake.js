@@ -4,11 +4,6 @@ import { RABBIT } from '../items';
 
 export { image }
 
-export const consequences = {
-  dropItems: [ RABBIT ],
-  life: +10,
-}
-
 export const content =  
   <p>
     A calm but short night, you feel tired from the lack of sleep.

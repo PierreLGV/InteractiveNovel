@@ -15,7 +15,6 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'HuntingTrap', message: "Set a trap" },
-  { page: 'ForestLichen', message: "Look for animal tracks"},
-  { page: 'Bandit', message: "Go deeper in the woods"},
+  { page: 'Temple', message: "Entrez dans le temple en ruine" },
+  { page: 'ForestLeftRoad', message: "Retourner sur vos pas"},
 ]

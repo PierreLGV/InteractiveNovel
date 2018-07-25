@@ -18,6 +18,6 @@ export const content =
 export const choices = [
   { page: 'BonefireAsleep', message: "Try to find sleep" },
   { page: 'BonefireAwake', message: "Stay a while near the bonefire"},
-  { page: 'BonefireAwake', message: "Cuisinez le lapin a la broche", requires: { items: [ RABBIT ] } },
+  { page: 'BonefireAwakeCook', message: "Cuisinez le lapin a la broche", requires: { items: [ RABBIT ] } },
   
 ]

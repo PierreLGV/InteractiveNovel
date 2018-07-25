@@ -1,11 +1,16 @@
 import React from 'react'
-import image from '../images/backgrounds/followSolarKnight.jpg'
+import image from '../images/backgrounds/clairiere.jpg'
 
 export { image }
 
+export const consequences = {
+  setLife: 100,
+  setMana: 20,
+}
+
 export const content =  
   <p>
-    L'homme depose son casque et monte au sommet des marches.
+    You've been walking all day, several options offers to you.
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Aenean sed justo sapien. Aenean et metus auctor, euismod quam nec, lobortis metus. 
     Vivamus fermentum libero quis augue ultricies feugiat. Pellentesque sed euismod tellus. 
@@ -14,7 +19,5 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'StealSunHelm', message: "Voler le casque" },
-  { page: 'MeetSolarKnight', message: "Aller se presenter"},
-  { page: 'SolarFlare', message: "Jetter une pierre dans sa direction"},
+  { page: 'Intro', message: "Partir a l'aventure" },
 ]

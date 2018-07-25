@@ -16,7 +16,6 @@ export const content =
 
 export const choices = [
   { page: 'LakeStatue', message: "Swim in the water for a while" },
-  { page: 'MuddyWater', message: "Look for fishes"},
-  { page: 'Bonefire', message: "Inspect the bottom of the lake"},
-  { page: 'GatherFood', message: "Relax and enjoy the refreshing water"},
+  { page: 'LakeBottom', message: "Inspect the bottom of the lake"},
+  { page: 'DiveIntoTheLake', message: "Retourner sur la rive"},
 ]

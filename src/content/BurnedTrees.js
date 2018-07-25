@@ -1,11 +1,11 @@
 import React from 'react'
 import image from '../images/backgrounds/burnedTrees.jpg'
-import { LEATHER_BOOTS } from '../items'
+import { CHAPKA } from '../items'
 
 export { image }
 
 export const consequences = {
-  pickUpItems: [ LEATHER_BOOTS ]
+  pickUpItems: [ CHAPKA ],
 }
 
 export const content =  

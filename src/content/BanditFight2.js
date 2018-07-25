@@ -5,7 +5,6 @@ import { CHAPKA } from '../items'
 export { image }
 
 export const consequences = {
-  pickUpItems: [ CHAPKA ],
   mana: -50
 }
 
@@ -21,5 +20,5 @@ export const content =
 
 export const choices = [
   { page: 'BurnedTrees', message: "Combattre", requires: { mana: 50 } },
-  { page: 'DiveIntoTheLake', message: "Fuir"},
+  { page: 'GatherFood', message: "Fuir"},
 ]

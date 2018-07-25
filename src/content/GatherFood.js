@@ -18,4 +18,6 @@ export const choices = [
   { page: 'HuntingTrap', message: "Set a trap" },
   { page: 'ForestLichen', message: "Look for animal tracks"},
   { page: 'Bandit', message: "Go deeper in the woods"},
+  { page: 'Intro', message: "Retourner à la croisée des chemins"},
+  
 ]

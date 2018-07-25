@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/backgrounds/forestMan.jpg'
+import image from '../images/backgrounds/muddywater.png'
 import { RONDACHE } from '../items'
 
 export { image }
@@ -10,11 +10,11 @@ export const consequences = {
 
 export const content =  
   <p>
-    Vous fouillé
+    Vous fouillez la vase et trouvez un bouclier métalique de mauvaise facture.
   </p>
 
 export const choices = [
-  { page: 'ForestLeftRoad', message: "Revenir sur vos pas" },
-  { page: 'FollowSolarKnight', message: "Suivre" },
-  { page: 'SolarKnight', message: "Jeter une pierre dans sa direction" },
+  { page: 'LakeStatue', message: "Swim in the water for a while" },
+  { page: 'MuddyWater', message: "Look for fishes"},
+  { page: 'DiveIntoTheLake', message: "Retourner sur la rive"},
 ]

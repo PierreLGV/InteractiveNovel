@@ -1,13 +1,16 @@
 import { createStore } from 'redux'
+import { CHAPKA, LAZARUS_SPIRE } from './items';
+import { RABBIT } from './items';
+
 
 const initialState = {
   background: 'linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.1))',
   content: 'loading',
   choices: [],
-  life: 0,
-  mana: 0,
+  life: 100, //0,
+  mana: 50, //0,
   gameOver: false,
-  inventory: []
+  inventory: [LAZARUS_SPIRE]
 }
 
 const reducer = (state, action) => {
@@ -24,6 +27,7 @@ const reducer = (state, action) => {
     if (consequences) {
       newState.life = consequences.setLife || state.life
       newState.mana = consequences.setMana || state.mana
+      newState.inventory = consequences.setInventory || state.inventory
       
       newState.life += consequences.life || 0
       newState.mana += consequences.mana || 0

@@ -19,6 +19,6 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'BanditFight2', message: "Fight", requires: { mana: 50 } },
-  { page: 'DiveIntoTheLake', message: "Flight"},
+  { page: 'BurnedTrees', message: "Fight", requires: { mana: 50 } },
+  { page: 'GatherFood', message: "Fuir"},
 ]
