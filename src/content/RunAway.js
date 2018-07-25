@@ -5,7 +5,7 @@ export { image }
 
 export const content =  
   <p>
-    Sous le regard meprisant, vous fuyez voeulement á travers bois
+    Sous le regard meprisant, vous fuyez voeulement á travers bois.
 
   </p>
 

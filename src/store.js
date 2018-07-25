@@ -1,5 +1,5 @@
 import { createStore } from 'redux'
-import { CHAPKA, LAZARUS_SPIRE } from './items';
+import { CHAPKA, LAZARUS_SPIRE, RONDACHE } from './items';
 import { RABBIT } from './items';
 
 
@@ -8,9 +8,9 @@ const initialState = {
   content: 'loading',
   choices: [],
   life: 100, //0,
-  mana: 50, //0,
+  mana: 20, //0,
   gameOver: false,
-  inventory: [LAZARUS_SPIRE]
+  inventory: []
 }
 
 const reducer = (state, action) => {
@@ -32,7 +32,7 @@ const reducer = (state, action) => {
       newState.life += consequences.life || 0
       newState.mana += consequences.mana || 0
       
-      newState.inventory = [ ...state.inventory, ...(consequences.pickUpItems || []) ] // todo: handle duplicates
+      newState.inventory = [ ...newState.inventory, ...(consequences.pickUpItems || []) ] // todo: handle duplicates
 
       if (consequences.pickUpRandomItems) {
         const randomIndex = Math.floor(Math.random() * consequences.pickUpRandomItems.length)

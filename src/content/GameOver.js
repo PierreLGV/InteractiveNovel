@@ -5,7 +5,7 @@ export { image }
 
 export const content =  
   <p>
-    Your Hero has perished.
+    Vous êtes tombé au combat.
   </p>
 
 export const choices = [

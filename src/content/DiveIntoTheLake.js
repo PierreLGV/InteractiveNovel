@@ -5,18 +5,13 @@ export { image }
 
 export const content =  
   <p>
-    Far away, swall canoes are going out of sight.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Aenean sed justo sapien. Aenean et metus auctor, euismod quam nec, lobortis metus. 
-    Vivamus fermentum libero quis augue ultricies feugiat. Pellentesque sed euismod tellus. 
-    Nullam et dui a lorem efficitur auctor eget vel quam. Fusce nec interdum mi, a lobortis neque. 
-    Morbi vitae enim fringilla, lacinia nibh id, bibendum mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    De petites embarcations disparaissent au loin. L'eau est calme et l'idée de vous y baigner vous plaint bien.
 
   </p>
 
 export const choices = [
-  { page: 'LakeStatue', message: "Swim in the water for a while" },
-  { page: 'MuddyWater', message: "Look for fishes"},
-  { page: 'LakeBottom', message: "Inspect the bottom of the lake"},
+  { page: 'LakeStatue', message: "Nagez un moment pour vous delacer les muscles." },
+  { page: 'MuddyWater', message: "Cherchez du poisson"},
+  { page: 'LakeBottom', message: "Inspecter le fond du lac"},
   { page: 'Intro', message: "Retournez sur la croisée des chemins"},
 ]

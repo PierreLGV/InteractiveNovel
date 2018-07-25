@@ -6,12 +6,13 @@ export { image }
 
 export const consequences = {
   pickUpItems: [ CHAPKA ],
+  mana: -50  
 }
 
 export const content =  
   <p>
     Puiser dans vos ressource magique vous permet de lancer un puissant sortilege reduisant vos assaillants et une partie de la foret en cendre.
-    Il ne vous reste quúne solution, retourner sur vos pas.
+    Il ne vous reste qu'une solution, retourner sur vos pas.
 
   </p>
 

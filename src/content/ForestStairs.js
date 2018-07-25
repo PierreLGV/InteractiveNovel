@@ -5,17 +5,11 @@ export { image }
 
 export const content =  
   <p>
-    Stairs carved in the rocks in front of you.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Aenean sed justo sapien. Aenean et metus auctor, euismod quam nec, lobortis metus. 
-    Vivamus fermentum libero quis augue ultricies feugiat. Pellentesque sed euismod tellus. 
-    Nullam et dui a lorem efficitur auctor eget vel quam. Fusce nec interdum mi, a lobortis neque. 
-    Morbi vitae enim fringilla, lacinia nibh id, bibendum mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
+    Une bordée de marches creusées dans la roche a flan de falaise.
   </p>
 
 export const choices = [
-  { page: 'Upstairs', message: "Climb up the stairs" },
-  { page: 'ForestLeftRoad', message: "Go backward, doesn't feel safe this way" },
+  { page: 'Upstairs', message: "Monter les marches" },
+  { page: 'ForestLeftRoad', message: "Retourner en arriere, ce chemin ne vous inspire rien de bon" },
   
 ]

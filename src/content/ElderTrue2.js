@@ -5,16 +5,12 @@ export { image }
 
 export const content =  
   <p>
-    You Set a Trap.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Aenean sed justo sapien. Aenean et metus auctor, euismod quam nec, lobortis metus. 
-    Vivamus fermentum libero quis augue ultricies feugiat. Pellentesque sed euismod tellus. 
-    Nullam et dui a lorem efficitur auctor eget vel quam. Fusce nec interdum mi, a lobortis neque. 
-    Morbi vitae enim fringilla, lacinia nibh id, bibendum mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
+    Comment remplir l'Array de Bool sans String ?
   </p>
 
 export const choices = [
-  { page: 'ElderTrue3', message: "reponse 1" },
-  { page: 'ElderFalse', message: "reponse 2"},
+  { page: 'ElderTrue3', message: "Mais t'es un gros dégueulasse toi ?!" },
+  { page: 'ElderFalse', message: "Je spread les Bool dans l'Array... obvious" },
+  { page: 'ElderFalse', message: ".map ...? filter ? ... var ?"},
+  { page: 'ElderFalse', message: "Array.push()"},
 ]
