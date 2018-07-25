@@ -5,7 +5,8 @@ export { image }
 
 export const content =  
   <p>
-    Merci au revoir
+    Merci de m 'avoir rendu visite et tenu companie. Je suis si isolé dans ces vieilles ruines.
+    Au revoir.
   </p>
 
 export const choices = [

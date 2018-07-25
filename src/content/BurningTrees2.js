@@ -10,10 +10,10 @@ export const consequences = {
 
 export const content =  
   <p>
-    you finished act1
-
+    Felicitation, vous venez de terminer l'acte I.
   </p>
 
 export const choices = [
-  { page: 'BurningTrees2', message: "...suite"},
+  { page: 'Start', message: "New Game" },
+  
 ]

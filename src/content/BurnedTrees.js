@@ -6,6 +6,7 @@ export { image }
 
 export const consequences = {
   pickUpItems: [ CHAPKA ],
+  mana: -50  
 }
 
 export const content =  

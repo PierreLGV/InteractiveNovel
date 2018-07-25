@@ -8,9 +8,9 @@ const initialState = {
   content: 'loading',
   choices: [],
   life: 100, //0,
-  mana: 50, //0,
+  mana: 20, //0,
   gameOver: false,
-  inventory: [LAZARUS_SPIRE]
+  inventory: []
 }
 
 const reducer = (state, action) => {
