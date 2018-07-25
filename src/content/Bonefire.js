@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/bonefire.jpg'
+import image from '../images/backgrounds/bonefire.jpg'
 
 export { image }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/deepforest.jpg'
+import image from '../images/backgrounds/deepforest.jpg'
 
 export { image }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/banditAmbush.jpg'
+import image from '../images/backgrounds/banditAmbush.jpg'
 
 export { image }
 

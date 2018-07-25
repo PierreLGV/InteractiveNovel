@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/forestleftroad.jpeg'
+import image from '../images/backgrounds/forestleftroad.jpeg'
 
 export { image }
 

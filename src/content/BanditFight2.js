@@ -1,10 +1,11 @@
 import React from 'react'
-import image from '../images/banditAmbush.jpg'
+import image from '../images/backgrounds/banditAmbush.jpg'
+import { CHAPKA } from '../items'
 
 export { image }
 
 export const consequences = {
-  pickUp: [7],
+  pickUpItems: [ CHAPKA ]
 }
 
 export const content =  
@@ -15,10 +16,9 @@ export const content =
     Vivamus fermentum libero quis augue ultricies feugiat. Pellentesque sed euismod tellus. 
     Nullam et dui a lorem efficitur auctor eget vel quam. Fusce nec interdum mi, a lobortis neque. 
     Morbi vitae enim fringilla, lacinia nibh id, bibendum mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
   </p>
 
 export const choices = [
-  { page: 'BanditFight', message: "Fight", requires: { mana: 50 } },
-  { page: 'DiveIntoTheLake', message: "Flight"},
+  { page: 'BurnedTrees', message: "Combattre", requires: { mana: 50 } },
+  { page: 'DiveIntoTheLake', message: "Fuir"},
 ]

@@ -1,10 +1,11 @@
 import React from 'react'
-import image from '../images/forestlichen.jpg'
+import image from '../images/backgrounds/forestlichen.jpg'
+import { LEATHER_BOOTS } from '../items'
 
 export { image }
 
 export const consequences = {
-  pickUpRandom: [0, 5]
+  pickUpRandomItems: [ LEATHER_BOOTS ] // todo: add more
 }
 
 export const content =  

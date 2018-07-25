@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/forestMan.jpg'
+import image from '../images/backgrounds/forestMan.jpg'
 
 export { image }
 
@@ -15,9 +15,9 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'SolarKnight', message: "Go back" },
-  { page: 'FollowSolarKnight', message: "Follow" },
-  { page: 'SolarKnight', message: "Throw rocks" },
+  { page: 'ForestLeftRoad', message: "Revenir sur vos pas" },
+  { page: 'FollowSolarKnight', message: "Suivre" },
+  { page: 'SolarKnight', message: "Jeter une pierre dans sa direction" },
   
   
 ]

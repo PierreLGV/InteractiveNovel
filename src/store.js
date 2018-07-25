@@ -1,12 +1,11 @@
 import { createStore } from 'redux'
-import items from './items'
 
 const initialState = {
   background: 'linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.1))',
   content: 'loading',
   choices: [],
   life: 100,
-  mana: 80,
+  mana: 20,
   gameOver: false,
   inventory: []
 }
@@ -24,56 +23,24 @@ const reducer = (state, action) => {
 
     if (consequences) {
       newState.life += consequences.life || 0
-      newState.inventory = [ ...state.inventory, ...(consequences.pickUp || []).map( i => items[i]) ] // todo: handle duplicates
+      newState.mana += consequences.mana || 0
+      newState.inventory = [ ...state.inventory, ...(consequences.pickUpItems || []) ] // todo: handle duplicates
 
-      if (consequences.pickUpRandom) {
-        const randomIndex = Math.floor(Math.random() * consequences.pickUpRandom.length)
-        const index = consequences.pickUpRandom[randomIndex]
-        const item = items[index]
+      if (consequences.pickUpRandomItems) {
+        const randomIndex = Math.floor(Math.random() * consequences.pickUpRandomItems.length)
+        const randomItemIndex = consequences.pickUpRandomItems[randomIndex]
 
-        newState.inventory = [ ...newState.inventory, item ]
+        newState.inventory = [ ...newState.inventory, randomItemIndex ]
+      }
+
+      if (consequences.dropItems) {
+        newState.inventory = newState.inventory.filter(itemIndex => !consequences.dropItems.includes(itemIndex))
       }
     }
 
     return newState
   }
-  if (action.type === 'LOAD_INVENTORY') {
-    return {
-      ...state,
-      inventory: action.inventory
-    }
-  }
-  if (action.type === 'REMOVE_LIFE') {
-    if (state.life === 0) {
-      return {
-        ...state,
-        gameOver: true
-      }
-    }
-
-    return {
-        ...state,
-        life: state.life - action.life
-    }
-  }
-  if (action.type === 'ADD_LIFE') {
-    if (state.life === 100) {
-      return {
-        ...state,
-        life: 100
-      }
-    } else if (state.life + action.life > 100 ) {
-      return {
-        ...state,
-        life: 100
-      }
-    }
-
-    return {
-        ...state,
-        life: state.life + action.life
-    }
-  }
+  
   return state
 }
 
@@ -82,25 +49,7 @@ export const store = createStore(reducer, initialState)
 const loadPage = async loadingPage => {
   store.dispatch({ type: 'LOAD_PAGE', page: await loadingPage })
 }
-const loadInventory = () => {
-  store.dispatch({ type: 'LOAD_INVENTORY'})
-}
-const removeLife = () => {
-  const random = Math.random(Math.floor(0, 10))
-  const removeLife = this.state.life - random
-  store.dispatch({ type: 'REMOVE_LIFE', removeLife})
-}
-const addLife = () => {
-  const random = Math.random(Math.floor(0, 10))
-  const addLife = this.state.life + random
-  store.dispatch({ type: 'ADD_LIFE', addLife})
-}
-const addItem = () => {
-  store.dispatch({ type: 'ADD_ITEM',})
-}
 
 export const actions = {
   loadPage,
-  removeLife,
-  addItem
 }

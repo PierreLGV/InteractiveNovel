@@ -1,12 +1,7 @@
 import React from 'react'
-import image from '../images/followSolarKnight.jpg'
+import image from '../images/backgrounds/followSolarKnight.jpg'
 
 export { image }
-
-export const consequences = {
-  pickUp: [6]
-}
-
 
 export const content =  
   <p>
@@ -16,7 +11,6 @@ export const content =
     Vivamus fermentum libero quis augue ultricies feugiat. Pellentesque sed euismod tellus. 
     Nullam et dui a lorem efficitur auctor eget vel quam. Fusce nec interdum mi, a lobortis neque. 
     Morbi vitae enim fringilla, lacinia nibh id, bibendum mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
   </p>
 
 export const choices = [

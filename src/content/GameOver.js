@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/gameover.jpg'
+import image from '../images/backgrounds/gameover.jpg'
 
 export { image }
 

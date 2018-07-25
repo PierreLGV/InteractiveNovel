@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/muddywater.png'
+import image from '../images/backgrounds/muddywater.png'
 
 export { image }
 

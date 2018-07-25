@@ -1,11 +1,11 @@
 import React from 'react'
-import image from '../images/huntingTrap.jpg'
+import image from '../images/backgrounds/huntingTrap.jpg'
 
 export { image }
 
 export const content =  
   <p>
-    You Set a Trap>
+    You Set a Trap.
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Aenean sed justo sapien. Aenean et metus auctor, euismod quam nec, lobortis metus. 
     Vivamus fermentum libero quis augue ultricies feugiat. Pellentesque sed euismod tellus. 

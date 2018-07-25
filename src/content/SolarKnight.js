@@ -1,11 +1,11 @@
 import React from 'react'
-import image from '../images/backgrounds/lake.jpg'
+import image from '../images/backgrounds/solarknight.jpg'
 
 export { image }
 
 export const content =  
   <p>
-    Far away, swall canoes are going out of sight.
+    Water is too muddy.
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Aenean sed justo sapien. Aenean et metus auctor, euismod quam nec, lobortis metus. 
     Vivamus fermentum libero quis augue ultricies feugiat. Pellentesque sed euismod tellus. 
@@ -15,8 +15,9 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'LakeStatue', message: "Swim in the water for a while" },
-  { page: 'MuddyWater', message: "Look for fishes"},
-  { page: 'LakeBottom', message: "Inspect the bottom of the lake"},
-  { page: 'GatherFood', message: "Relax and enjoy the refreshing water"},
+  { page: 'Excuses', message: "S'excuser et argumenter", 
+  // requires: item[7] 
+},
+  { page: 'SolarFlare', message: "Engager le combat"},
+  { page: 'RunAway', message: "Tenter de prendre la fuite"},
 ]
