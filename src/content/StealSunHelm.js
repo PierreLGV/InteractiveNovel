@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/backgrounds/sunknightmehdi.gif'
+import image from '../images/backgrounds/psychomehdi.gif'
 import { SUN_HELM } from '../items'
 
 export const consequences = {
@@ -8,7 +8,7 @@ export const consequences = {
 
 export { image }
 
-export const content =  
+export const content =
   <p>
     Vous voler le casque de l homme en armure. Il vous repere et accourt d'un pas menacant. Vous decouvrez son vrai visage ...
   </p>
