@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/backgrounds/BurningTrees2.jpg'
+import image from '../images/backgrounds/burnedTrees2.jpg'
 import { LAZARUS_SPIRE } from '../items';
 
 export { image }
