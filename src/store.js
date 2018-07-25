@@ -10,7 +10,7 @@ const initialState = {
   life: 100, //0,
   mana: 20, //0,
   gameOver: false,
-  inventory: [RABBIT, CHAPKA, LAZARUS_SPIRE]
+  inventory: []
 }
 
 const reducer = (state, action) => {
