@@ -4,8 +4,8 @@ const initialState = {
   background: 'linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.1))',
   content: 'loading',
   choices: [],
-  life: 10,
-  mana: 20,
+  life: 0,
+  mana: 0,
   gameOver: false,
   inventory: []
 }
@@ -22,8 +22,12 @@ const reducer = (state, action) => {
     }
 
     if (consequences) {
+      newState.life = consequences.setLife || state.life
+      newState.mana = consequences.setMana || state.mana
+      
       newState.life += consequences.life || 0
       newState.mana += consequences.mana || 0
+      
       newState.inventory = [ ...state.inventory, ...(consequences.pickUpItems || []) ] // todo: handle duplicates
 
       if (consequences.pickUpRandomItems) {

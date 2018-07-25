@@ -3,6 +3,11 @@ import image from '../images/backgrounds/clairiere.jpg'
 
 export { image }
 
+export const consequences = {
+  setLife: 100,
+  setMana: 20,
+}
+
 export const content =  
   <p>
     You've been walking all day, several options offers to you.
