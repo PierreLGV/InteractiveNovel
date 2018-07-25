@@ -18,4 +18,6 @@ export const choices = [
   { page: 'ForestStairs', message: "Observer les environs" },
   { page: 'ForestMonster', message: "Quitter le sentier et couper à travers bois"},
   { page: 'GhostForest', message: "Avancer avec précaution sans faire de bruit"},
+  { page: 'Intro', message: "Retourner a la croisée des chemins"},  
+  
 ]
