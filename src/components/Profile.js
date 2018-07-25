@@ -9,7 +9,7 @@ const Profile = (props) =>
   <div className="row profile_thumbnail">
       <div className='col l8 offset-l2 m8 offset-m2 s8 offset-s2 profile_picture'>
         <div className='character_name'>
-          <h1>Gandalf</h1>
+          {/* <h1>Name</h1> */}
         </div>
       </div>
       <LifeSphere life={props.life} />

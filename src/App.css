@@ -2,6 +2,10 @@
   cursor: url("./images/sword.png"), pointer;
 }
 
+.App .row {
+  margin-bottom: 0;
+}
+
 .character_sheet {
   background-image: url('./images/manuscript.jpg');
   background-repeat: no-repeat;

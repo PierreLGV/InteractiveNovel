@@ -1,8 +1,12 @@
 import React from 'react'
 import image from '../images/backgrounds/huntingTrap.jpg'
+import { RABBIT } from '../items';
 
 export { image }
 
+export const consequences = {
+  pickUpItems: [ RABBIT ],
+}
 export const content =  
   <p>
     You Set a Trap.
@@ -15,7 +19,7 @@ export const content =
   </p>
 
 export const choices = [
-  { page: 'Intro', message: "Go Back to the cross road and wait for animals to get trapped" },
+  { page: 'Intro', message: "Go Back to the cross road" },
   { page: 'Bandit', message: "Explore the forest deeper"},
  
 ]

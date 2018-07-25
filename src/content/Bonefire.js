@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../images/backgrounds/bonefire.jpg'
+import { RABBIT } from '../items';
 
 export { image }
 
@@ -17,4 +18,6 @@ export const content =
 export const choices = [
   { page: 'BonefireAsleep', message: "Try to find sleep" },
   { page: 'BonefireAwake', message: "Stay a while near the bonefire"},
+  { page: 'BonefireAwake', message: "Cuisinez le lapin a la broche", requires: { items: [ RABBIT ] } },
+  
 ]

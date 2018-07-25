@@ -5,7 +5,8 @@ import { CHAPKA } from '../items'
 export { image }
 
 export const consequences = {
-  pickUpItems: [ CHAPKA ]
+  pickUpItems: [ CHAPKA ],
+  mana: -50
 }
 
 export const content =  

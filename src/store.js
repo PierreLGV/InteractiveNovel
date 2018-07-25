@@ -4,7 +4,7 @@ const initialState = {
   background: 'linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.1))',
   content: 'loading',
   choices: [],
-  life: 100,
+  life: 10,
   mana: 20,
   gameOver: false,
   inventory: []
