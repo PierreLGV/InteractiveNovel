@@ -6,6 +6,7 @@ export { image }
 export const consequences = {
   setLife: 100,
   setMana: 20,
+  setInventory: []
 }
 
 export const content =  
