@@ -8,11 +8,14 @@ import LifeSphere from './components/LifeSphere.js'
 import Answer from './components/Answer.js'
 import './App.css'
 
+const basepath = process.env.REACT_APP_BASEPATH || ''
+console.log({ basepath })
+
 const Page404 = () => <div>404 gros..</div>
 
 const Menu = () =>
   <div>
-    <Link to="/story/Start">Start</Link>
+    <Link to="story/Start">Start</Link>
   </div>
 
 const Game = ({ state }) =>
@@ -22,8 +25,8 @@ const Game = ({ state }) =>
       <Item {...actions} {...state}/>
     </div>
     <div className="col s12 m8 l6">
-      <Router>
-        <Text path=":pageName" {...actions} {...state} />
+      <Router basepath={basepath}>
+        <Text path="story/:pageName" {...actions} {...state} />
       </Router>
     </div>
     <div className="col s12 m4 l3">
@@ -43,9 +46,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
+        <Router basepath={basepath}>
           <Menu path="/" />
-          <Game path="/story/*" state={this.state} />
+          <Game path="story/*" state={this.state} />
           <Page404 path="*" />
         </Router>
       </div>
