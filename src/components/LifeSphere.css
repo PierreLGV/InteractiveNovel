@@ -16,6 +16,7 @@
   flex: 1;
   background-repeat: no-repeat;
   background-position: bottom left;
+  transition: height 2s ease-in-out;
 }
 
 .life-sphere-mask {
