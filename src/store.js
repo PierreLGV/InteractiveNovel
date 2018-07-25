@@ -1,26 +1,5 @@
 import { createStore } from 'redux'
-import leatherboots from './images/leatherboots.png'
-import harlequincrest from './images/harlequincrest.gif'
-import lazarusspire from './images/lazarusspire.gif'
-import sash from './images/sash.gif'
-import rondache from './images/rondache.gif'
-import quilted from './images/quilted.gif'
-import gnarledstaff from './images/gnarledstaff.gif'
-import avatar from './images/avatar.png'
-import sunhelm from './images/sunhelm.png'
-import chapka from './images/chapka.png'
-
-
-const items = [
-  { name: 'leatherboots', img: leatherboots },
-  { name: 'harlequincrest', img: harlequincrest },
-  { name: 'lazarusspire', img: lazarusspire },
-  { name: 'sash', img: sash },
-  { name: 'rondache', img: rondache },
-  { name: 'quilted', img: quilted },
-  { name: 'sunhelm', img: sunhelm },
-  { name: 'chapka', img: chapka },
-]
+import items from './items'
 
 const initialState = {
   background: 'linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.1))',
@@ -33,7 +12,7 @@ const initialState = {
 }
 
 const reducer = (state, action) => {
- 
+
   if (action.type === 'LOAD_PAGE') {
     const consequences = action.page.consequences
     const newState = {
@@ -46,14 +25,14 @@ const reducer = (state, action) => {
     if (consequences) {
       newState.life += consequences.life || 0
       newState.inventory = [ ...state.inventory, ...(consequences.pickUp || []).map( i => items[i]) ] // todo: handle duplicates
-      
+
       if (consequences.pickUpRandom) {
         const randomIndex = Math.floor(Math.random() * consequences.pickUpRandom.length)
         const index = consequences.pickUpRandom[randomIndex]
         const item = items[index]
 
-        newState.inventory = [ ...newState.inventory, item ] 
-      } 
+        newState.inventory = [ ...newState.inventory, item ]
+      }
     }
 
     return newState
