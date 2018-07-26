@@ -1,3 +1,3 @@
 Le livre dont VOUS etes le héro.
 
-clone repo > npm i > mpn run electron-dev > play :)
+clone repo > `npm i` > `npm run electron-dev` > play :)
